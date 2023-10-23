@@ -8,9 +8,9 @@ bmi = weight / (height * height)
 result = "" # resultを空にしておく(初期化)
 if bmi < 18.5:
     result = "痩せ型"
-if (18.5 <= bmi) and (bmi < 25):
+if (18.5 <= bmi < 25):
     result = "標準体重"
-if (25 <= bmi) and (bmi < 30):
+if (25 <= bmi < 30):
     result = "肥満(軽)"
 if bmi >= 30:
     result = "肥満(重)"

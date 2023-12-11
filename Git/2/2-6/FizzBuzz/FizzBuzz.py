@@ -10,3 +10,4 @@ for i in range(1,21):
         print('Fizz')
         continue
     print(i)
+

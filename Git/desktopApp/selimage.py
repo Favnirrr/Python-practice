@@ -14,11 +14,10 @@ def openFile():
     if path:
         dispPhoto(path)
 
-def savePhoto():
+def savePhoto(path):
     # 画像を保存する
-    path = fd.asksaveasfilename()
-    if path:
-        imgData.save(path)
+    if newImg:
+        newImg.save(path, quality=95)
 
 def saveFile():
     path = fd.asksaveasfilename()
@@ -26,7 +25,7 @@ def saveFile():
     if path:
         savePhoto(path)
 
-imgData = None
+newImg = None
 
 root = tk.Tk()
 root.geometry("400x350")

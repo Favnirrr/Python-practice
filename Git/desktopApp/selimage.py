@@ -14,28 +14,28 @@ def openFile():
     if path:
         dispPhoto(path)
 
-def savePhoto(path):
-    # 画像を保存する
-    if newImg:
-        newImg.save(path, quality=95)
+#   def savePhoto(path):
+#   # 画像を保存する
+#   if newImg:
+#   newImg.save(path, quality=95)
 
-def saveFile():
-    path = fd.asksaveasfilename()
-    print(path)
-    if path:
-        savePhoto(path)
+#   def saveFile():
+#       path = fd.asksaveasfilename()
+#       print(path)
+#       if path:
+#           savePhoto(path)
 
-newImg = None
+#   newImg = None
 
 root = tk.Tk()
 root.geometry("400x350")
 
 btn_openFile = tk.Button(text="ファイルを開く",command=openFile)
-btn_saveFile = tk.Button(text="画像を保存",command=saveFile)
+#   btn_saveFile = tk.Button(text="画像を保存",command=saveFile)
 imgLbl = tk.Label()
 
 btn_openFile.pack()
-btn_saveFile.pack()
+#   btn_saveFile.pack()
 imgLbl.pack()
 
 tk.mainloop()
